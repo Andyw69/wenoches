@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+/*font-family: 'Comic Neue',cursive ;*/
+/*font-family: 'Tangerine', cursive;*/
+    font-family: 'Comic Neue', cursive;
+/*font-size: 35px;*/
+    height: 100vh;
+    width: 100%;
+    background-color:bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor img {
+    height: 150px;
+}
+.caja {
+    height: 20px;
+    width: 160px;
+    border: 3px solid black;
+    
+}
+.caja-loading {
+    height: 100%;
+    width: 100%;
+    background-color: #555ba3;
+    animation: loading 2s;
+
+}
+@keyframes loading {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 160px;
+    }
+    
+}
+p {
+    font-size: 30px;
+}
+.contenedor >i {
+    font-size: 50px;
+}
+button {
+    height: 35px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: bisque;
+    cursor: pointer;
+}
+button:hover {
+    background-color: black;
+}
+
+button p:hover {
+    color:bisque;
+}
+
+@media screen and (max-width: 800px) {
+    
+}
+#loading-message{
+    font-family: 'Comic Neue', cursive;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+}
+#btn-btn-primarytm-intro-btn-tm-page-link{
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.2rem;
+    padding: 10px 10px;
+	position:absolute;
+    right: 110px;
+    width: 30%;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+}
