@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weenoches✨🌚</title>
+    <link rel="icon" type="favicon" href="img/butterfly.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"-->
+    <link rel="stylesheet" href="css/slick.css" type="text/css" /> 
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <!--anadiendo-->
+  <link href="style.css" rel="stylesheet"> <!--load all styles{añadiendo} -->
+	<link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles {añadiendo} -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"><!--{añadiendo}-->
+	<script defer src="fontawesome/js/all.js"></script> <!--load all styles  {añadiendo}-->
+  <!--Añadiendo el parallax-->
+  <link rel="stylesheet" href="css/main.css">
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<script src="js/app.js" defer></script>
+
+  <!--
+    
+TemplateMo 560 Astro Motion
+
+https://templatemo.com/tm-560-astro-motion
+
+-->
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="video/Estrellas.mp4" type="video/mp4">
+    </video>
+
+    <!--{añadiendo el audio}-->
+    
+    <audio id="player" ontimeupdate="updateProgress();">
+      <source  id="source">	
+      Audio no soportado	
+    </audio>
+    <!--{añadiendo}-->
+    <div id="controls">
+      <div class="timer" id="timer">
+        &nbsp;
+      </div>
+      <div class="volumen">
+        Vol:
+        <i class="fas fa-volume-down"></i> 
+        <input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75"> 
+        <i class="fas fa-volume-up"></i>
+      </div>
+      
+      <i class="fas fa-backward fa-2x" onclick="prevMusic();"></i>
+      <i class="far fa-play-circle fa-2x " onclick="togglePlay();" id="iconPlay"></i> 
+      <i class="fas fa-forward fa-2x" onclick="nextMusic();"></i>
+      <br>
+      <span id="currentPlay"></span><br>
+      <progress id="progress" value="0" max="100" ></progress>
+      
+      
+      
+      
+      <!--<h3>Mi música</h3>-->
+      <div id="playList"></div>
+   
+    
+    </div>
+    </div>
+    
+    <!--<p>Créditos de música: <a href="https://www.bensound.com/">https://www.bensound.com/</a></p>-->
+    
+    <script type="text/javascript" src="script.js"></script>
+    <!--{hasta aqui :")"}-->
+ 
+    <!--Añadiendo el mode dark-->
+  
+<!--Hasta aqui el mode dark-->
+    
+    <div class="page-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="cd-slider-nav">
+              <nav class="navbar navbar-expand-lg" id="tm-nav">
+                <a class="navbar-brand" href="#">Weenoches!!</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar-supported-content">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item selected">
+                        <a class="nav-link" aria-current="page" href="#0" data-no="1">Inicio</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#0" data-no="2">Imagenes para subirte el animo :3</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#0" data-no="3">No entres aqui!!!</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#0" data-no="4">Tis tos xd</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#0" data-no="5">Oye! si no te sientes bien lee esto :")</a>
+                        <div class="circle"></div>
+                      </li>
+                    </ul>
+                  </div>
+              </nav>
+            </div>
+          </div>          
+        </div>        
+      </div>      
+      <div class="container-fluid tm-content-container">
+        <ul class="cd-hero-slider mb-0 py-5">
+          <li class="px-3" data-page-no="1">
+            <div class="page-width-1 page-left">
+              <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
+                <div class="intro-left tm-bg-dark">
+                  <h2 class="mb-4">Cajue✨:")</h2>
+                  <p class="mb-4">
+                    Holiiis, si llegaste aquí estamos bien significa que funciona jsjsjs xd esta es la pagina principal y es donde esta la mayoría de cosas que puse para ti, tienes musica mientras ves la pagina, como veras tiene imágenes donde hay textos los cuales es mejor si lo pones en horizontal osea echadito ps, queria poner videos de tiktok para hacerte reir pero la pagina tarda en cargar, lo intente y demoro mucho :c asi que puse los mas livianos y algunos chistosos! quería poner memes pero no quería correr el riesgo de que ya lo habias visto, asi que cuando salgamos te mostrare varios memes y asi poder conocerte mejor porque la verdad no se mucho de ti! solo se que te gusta tomar, buenas decisiones obvio! jsjsjs espero te guste esto, se que no es mucho pero es trabajo humilde xd</p>
+                  <p class="mb-0">
+                  </p>
+                </div>
+                <div class="intro-right">
+                  <img src="img/Aqui estoy.jpg" alt="Image" class="img-fluid intro-img-1">
+                </div>
+                <div class="circle intro-circle-1"></div>
+                <div class="circle intro-circle-2"></div>
+                <div class="circle intro-circle-3"></div>
+                <div class="circle intro-circle-4"></div>
+              </div>
+              <div class="text-center">
+                <a href="Juegos/Juego1.html" class="btn btn-primary tm-intro-btn tm-page-link">
+                  Jueguito
+                </a>
+              </div>            
+            </div>            
+          </li>
+          <li data-page-no="2">
+            <!-- Image Carousel -->
+            <div class="mx-auto position-relative gallery-container">
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="mx-auto tm-border-top gallery-slider">
+                <figure class="effect-julia item">
+                    <img src="img/Tranqui.jpg" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>Aveces esta bien no poder, esta bien frenar un rato y darse un respiro para despues regresar bieen :") Quien dijo que tenemos que poder con absolutamente todo? recuerda eres arte wapaaa :3</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="Imagenes para el carrusel xd/oye estas super fiu fiu.jpg" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>En el pantano de mi corazon tu eres la puerca que mas se revuelca :3 ten para ti🌻:3 psdt: bañate!! jsjsjsj</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                  <img src="Imagenes para el carrusel xd/desde el cielo nos cuidan.jpg" alt="Image">
+                  <figcaption>
+                      <div>
+                          <p>El cielo brilla un poquito mas desde que se fueron, y aunque ya no estan aqui como queremos estan en su manera, quizas en cada atardecer, cuidandonos y mandandonos bonitas vibras✨</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+                <figure class="effect-julia item">
+                    <img src="Imagenes para el carrusel xd/despues de la tormenta siempre habra un arcoiris.jpg" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>Cuando menos te lo esperes, todo estará bien :") pudiste, puedes y podras!! recuerda que aveces tiene que llover para que salga el arcoiris, aveces toca mojarse bajo la lluvia, y cuando se vayan las nubes, te darás cuenta de que el sol ahora cubre tu rostro, y vendra todo lo bonito que te mereces de este mundo🌻🌈</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="Imagenes para el carrusel xd/Eres mas fuerte que tu ansiedad.jpg" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>Hoy no me siento bien, siento que no puedo decir lo que siento, se derrumba todo lo que daba por hecho y pa cagarla todavia aun no entiendo :") se que no me siento bien y por mas que me han dicho que eso no esta bien, todo el mundo se siente perdido al menos una vez. Salgo a caminar para pensarlo o almenos intentarlo, pienso y trueno mis dedos Uno, Dos y Tres, porque aunque no me siento bien me di cuenta que es normal sentirse mal tambien</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="Imagenes para el carrusel xd/Esta bien si hoy no mañana quizas si.jpg" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>Todo lleva tiempo asi que no te preocupes si estas yendo lento, lo estas haciendo bien✨todo es parte de seguir aprendiendo, si! eres muy valiente:3</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="Imagenes para el carrusel xd/Mariposa.jpg" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>Eres alguien increible y te admiro mucho, sabes porque? porque eres como una bella mariposa que su alma está pintada de colores🌈 eres muy bonita, brillas con esa aura que te caracteriza y tu dulce presencia que te hace más especial y única, espero que nunca cambies y que aquellas personas que te lastimaron no cambien tu forma de ser, brilla a donde quiera que vayas como siempre lo haces, bonita :3 ✨🤍✨</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="Imagenes para el carrusel xd/Eres luz de la bonita.jpg" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>Hay mas luz en ti de la que te imaginas, y tu sonrisa es la que mas te incrimina, wapaaa!!</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="Imagenes para el carrusel xd/Esta bien estar mal.jpg" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>Hey tranquila, esta bien estar mal, recuerda lo que te dije "Aveces la vida es dura porque si fuera facil seria yo xd asi de facil jsjsjs"</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="Imagenes para el carrusel xd/todo mejora tarde o temprano.jpg" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>Se que talvez las cosas no han sido como lo esperabas pero tambien se que va a pasar porque tu siempre brillas, siempre!! eres esa diferencia, tu eres diferente, lo que nunca antes vi.</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="Imagenes para el carrusel xd/estaras bieen.jpg" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>cuando te sientas mal es porque la silla esta chueca jajaja xd, recuerda que nadie es completamente inútil, puedes servir inclusive de mal ejemplo, lo mas importante es no saber, si no obtener el contacto de quien sabe! espera khee! jsjksjks xD </p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                  <img src="Imagenes para el carrusel xd/volveras a estar mejor.jpg" alt="Image">
+                  <figcaption>
+                    <div>
+                      <p>Estas cerca de vivir nuevas aventuras, no las arruines llevando al futuro un pasado que ya no existe y si de algo sirve, lo lamento! lamento que hayas tenido que llorar en tu cuarto y dejar de hacerlo cuando escuchabas pasos, lamento que hayas gritado y que aun asi nadie te haya escuchado, si de algo sirve, lo lamento :"c y lamento no haber puesto memes enves de esto pero los videos te apuesto que son buenos, y sonrei crj!! >:v </p>
+                    </div>
+                  </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                  <img src="Imagenes para el carrusel xd/Sigues siendo magia.jpg" alt="Image">
+                  <figcaption>
+                    <div>
+                      <p>Sabes que es lo que me gusta de ti, es que apesar de todo, eres todos los colores en su máxima intensidad! fantástica, geométrica y multicolor eso y todos los adejtivos bonitos que existen, eso eres!🌻✨🌈</p>
+                    </div>
+                  </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                  <img src="Imagenes para el carrusel xd/todo va a estar bien.jpg" alt="Image>">
+                  <figcaption>
+                    <p>Pvta ya aqui no se que poner aqui! oh vamos por unos llopos(pollos) de diego(10)? cms dos tres! si o ya? vienes o voy?👀 jsjsjs xd </p>
+                  </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                  <img src="Imagenes para el carrusel xd/Vales mucho.jpg" alt="Image">
+                  <figcaption>
+                      <div>
+                          <p>Bueno, para empezar tu no vales nada, porque tu no tienes precio :) pero si tenemos que poner un valor pues diría que tu vales un chingo!! y que digo un chingo, vales de aquí a senkata y mas allá, na mentiri, vales toda una vida, cada minuto, cada segundo, en fin vales la jodida pena, te mereces todo lo bonito de este mundo y quien no se de cuenta que haces de este mundo pequeño algo mucho mas grande pues enay no es y ya!</p>
+                      </div>
+                      <a href="#">View more</a>
+                  </figcaption>
+              </figure>
+              <figure class="effect-julia item">
+                <img src="Imagenes para el carrusel xd/tu puedes pero si hay dias que no esta bien.jpg" alt="Image">
+                <figcaption>
+                    <div>
+                        <p>No sabes el impacto que tienes en este mundo y es triste ver como todo te consume, tus problemas cada vez aumentan quizas y sientes que no puedes mas con todo pero quiero decirte que no eres todo lo malo que dices de ti cuando estas triste, eres mas de lo que tus pensamientos dicen, se que podras lograrlo, creo en ti eres muy valiente :"3</p>
+                    </div>
+                    <a href="#">View more</a>
+                </figcaption>
+            </figure>
+            
+          <figure class="effect-julia item">
+            <img src="Imagenes para el carrusel xd/lo estas haciendo bien.jpg" alt="Image">
+            <figcaption>
+                <div>
+                    <p>Talvez no te sientas bien ahora, se que te esfuerzas para estar bien, solo tu sabes como te sientes y la realidad que vives, solo tu sabes como sanar y quien o que lugar se vuelve un lugar feliz para ti, no es absurdo nada de esto, tus sentimientos son validos, esta bien estar mal y sentirse asi no es una debilidad! pasara bonita, tarde o temprano pasara! todo lo malo tiene un final acompañado de un principio chingón!! </p>
+                </div>
+                <a href="#">View more</a>
+            </figcaption>
+        </figure>
+        <figure class="effect-julia item">
+          <img src="Imagenes para el carrusel xd/la luna es tan bonita como tu.jpg" alt="Image">
+          <figcaption>
+              <div>
+                  <p>Eres como la luna, brillas sin estar llena y eso es lo bonito de ti sabes!! :3 </p>
+              </div>
+              <a href="#">View more</a>
+          </figcaption>
+      </figure>
+      
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="/Abrazo o.O/Abrazo.html" class="btn btn-primary tm-intro-btn tm-page-link">
+                Abrazo virtual :3
+              </a>
+              </div>
+          </li>
+          <li data-page-no="3" class="px-3">
+            <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom">
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="circle intro-circle-3"></div>
+              <div class="circle intro-circle-4"></div>
+              <div class="tm-bg-dark content-pad">
+                <h2 class="mb-4">Bañate!!</h2>
+                <p class="mb-4">
+                  Se que no estas acostumbrada a leer esto todos los días pero hey te escribi algo bonito espero te guste jsjsjs
+                </p>
+                <h3 class="mb-4">--------------------------------------------------------------------------------</h3>
+                <p style="text-align: justify;">
+                  Caminando aquí en lo alto de mi cerro, me detengo y pienso que antes no solía mirar tanto al cielo, pero ahora lo hago más a menudo porque el brillo de las estrellas me recuerda lo mucho que te pareces a ellas...desde que te conoci mis amaneceres son más espectaculares y las estrellas ya no me parecen tan distantes, me imagino que debe ser o bueno, quizás sea por lo bonito de tus ojos lo que me hace sentir más cerca del cielo y las estrellas, y es que sin saberlo volviste a mejorar mi universo, pues yo solo espero que nunca me faltes, que seas infinita, y es que yo solo quiero aprender contigo lo bonita que es la vida ✨♥✨🥺
+                  Antes no solía mirar tanto el cielo, pero ahora lo hago más a menudo ya que el brillo de las estrellas me recuerda lo mucho que yo a ti te quiero, preciosa✨
+                </p>
+                <h3 class="mb-4">--------------------------------------------------------------------------------</h3>
+                <p style="text-align: justify;">Me gustaria que lo intentaramos y que nos olvidaramos del miedo pendejo de si vamos a funcionar o no! de si saldremos hechos pedazos, hechos mierda o terminaremos a oscuras una vez mas. sin compromiso alguno y sin nada que nos ate, y si algun dia otros ojitos cajues nos causan revuelos en los adentros de nuestro corazon pues agradeceremos el viaje, las risas, los besos, los poemas, las canciones, pero mas que todo agradecere los recuerdos que me diste. Asi deveritas de veritas me gustaria que te quedaras, que nos dieramos el tiempo de tomarnos un cajue quizas dos o tres millones de ellos, o ya que chucha nos vamos a los agachaditos y comemos en los asientos VIP osea en la acera ps jsjsjjs tu pides sajta, yo thimpu y compartimos ya!, aunque ya uno entiende que nada es para siempre y todo termina por valer verg* tarde o temprano, y aun asi, con una mezcla entre dudas, corazonadas y un chingo de ganas, me gustaria que te quedaras a querernos el tiempo que asi lo prefieras, sin pretextos y sin webadas, a cucharadas grandes de amor bonito, viajes a pueblitos magicos con rolitas bien ricardas y hartas carcajadas!!! En fin, me gustaria que te quedaras para ver qué pasa...</p>
+                <h3 class="mb-4">--------------------------------------------------------------------------------</h3>
+                <p style="text-align: justify;">Sí mezclara el brillo de todas las estrellas, lo amplio del inmenso mar, la apasionante noche con la luz de una luna llena🌕el arcoíris🌈 resplandeciente después de una lluvia🌧estupenda con ese olor a tierra húmeda, así como el blanco de la nieve del illimani🏔los árboles de otoño🍁y la más  grandiosa primavera🌻si mezclará todas esas bellezas naturales y las pusiera en el contexto de lo más lindo que pueda existir♥aún así ninguna mezcla se podría comparar a ti...debieron utilizar un molde especial para lograr darte esa figura, esos ojitos lindos, esa tonta sonrisa y esa invaluable alma y es que bellezas como tú solo las hace Dios…se que ninguna mezcla te habrá de igualar pero tal vez pueda sintonizar mi corazón para poderte alcanzar...✨🌙
+                </p>
+                <h3 class="mb-4">--------------------------------------------------------------------------------</h3>
+                <p style="text-align: justify;">Quisiera decirte que te quiero pero para que? para que decirte que te quiero si ya otros te lo dijeron y aun asi se fueron, podria decirte que te amo pero para ser sincero se me hace un poco comun y para mi tu eres muy especial, como una estrella fugaz en el cielo, asi tan dificil de encontrar y de contemplar. Talvez esa sea la razon, esa sea tu magia porque al verte me causaba cierta limerencia o talvez todo sea una coincidencia y por mas que busque palabras para describir lo que siento no lo encuentro! es como algo inefable que me recorre por dentro y que aparece cada vez que te veo y que me hace falta cada vez que no estas! Tan cerca y a la vez tan lejos como enero y diciembre, tan lejos y tan cerca como una estrella fugaz asi que si, seras mi estrella fugaz y pedire un deseo, que encuentres eso que necesitas...</p>
+              </div>              
+            </div>
+          </li>
+
+          <li data-page-no="4">
+            <!-- Image Carousel -->
+            <div class="mx-auto position-relative gallery-container">
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="circle intro-circle-3"></div>
+              <div class="circle intro-circle-4"></div>
+              <div class="mx-auto tm-border-top gallery-slider">
+                  <!--Añadiendo los videos-->
+                  <div class="contain">
+                    <div class="heading">Videos de tis tos xd</div>
+                    <div class="video-contain">
+            
+                      
+                      <div class="video">
+                        <video src="/videos para el carrusell/1.mp4" ></video>
+                      </div>
+                      <div class="video">
+                        <video src="/videos para el carrusell/2.mp4" ></video>
+                      </div>
+                      <div class="video">
+                        <video src="/videos para el carrusell/3.mp4" ></video>
+                      </div>
+                      <div class="video">
+                        <video src="/videos para el carrusell/4.mp4" ></video>
+                      </div>
+                      <div class="video">
+                        <video src="/videos para el carrusell/5.mp4" ></video>
+                      </div>
+                      <div class="video">
+                        <video src="/videos para el carrusell/6.mp4" ></video>
+                      </div>
+                      <div class="video">
+                        <video src="/videos para el carrusell/7.mp4" ></video>
+                      </div>
+                      <div class="video">
+                        <video src="/videos para el carrusell/8.mp4" ></video>
+                      </div>
+                      <div class="video">
+                        <video src="/videos para el carrusell/9.mp4" ></video>
+                      </div>
+                      <div class="video">
+                        <video src="/videos para el carrusell/10.mp4" ></video>
+                      </div>
+                        
+
+                    </div>
+                </div-->
+                <script>
+                    var video=document.querySelectorAll('video')
+                    video.forEach(play =>play.addEventListener('click',()=>{
+                        play.classList.toggle('active');
+                        if(play.paused){
+                            play.play();
+                        }else{
+                            play.pause();
+                            play.currentTime = 0;
+                        }
+                    }));
+                </script>
+
+                      
+          
+          
+          
+          
+          
+          <!--li data-page-no="4">
+            <div class="page-width-1 page-left">
+              <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
+                <div class="intro-left tm-bg-dark">
+                  <a href="Juegos/Juego1.html"><button id="btn-empezar"><p>Juego 1</p></button></a>
+
+          </li-->
+
+          <!--li data-page-no="4">
+            <div class="mx-auto page-width-2">
+              <div class="row">
+                <div class="col-md-6 me-0 ms-auto">
+                  <h2 class="mb-4">Escribeme</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 tm-contact-left">
+                  <form action="#" method="POST" class="contact-form">
+                    <div class="input-group tm-mb-30">
+                        <input name="name" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Name">
+                    </div>
+                    <div class="input-group tm-mb-30">
+                        <input name="email" type="text" class="form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Email">
+                    </div>
+                    <div class="input-group tm-mb-30">
+                        <textarea rows="5" name="message" class="textarea form-control rounded-0 border-top-0 border-end-0 border-start-0" placeholder="Message"></textarea>
+                    </div>
+                    <div class="input-group justify-content-end">
+                        <input type="submit" class="btn btn-primary tm-btn-pad-2" value="Send">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-6 tm-contact-right">                  
+                  <p class="mb-4">
+                    Integer erat turpis, vestibulum pellentesque aliquam
+                    ultricies, finibus nec dui. Donec bibendum enim mi,
+                    at tristique leo feugiat at.
+                  </p>
+                  <div>
+                    Email: <a href="mailto:andrwesito69@gmail.com" class="tm-link-white">andrwesito69@gmail.com</a>
+                  </div>
+                  <div class="tm-mb-45">
+                    Y por ultimo no te des por vencida, todo pasa ok?</a>
+                  </div-->
+                  <!-- Map -->
+                  <!--div class="map-outer">
+                    <div class="gmap-canvas"-->
+                        <!--iframe width="100%" height="400" id="gmap-canvas"
+                            src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe-->
+                    <!--/div>
+                </div>
+                </div>
+              </div>
+            </div>            
+          </li-->
+          <li data-page-no="5">
+            <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom">
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="circle intro-circle-3"></div>
+              <div class="circle intro-circle-4"></div>
+              <div class="tm-bg-dark content-pad">
+                <h2 class="mb-4">Bañate!!</h2>
+                <p class="mb-4">
+                  Una vez me dijeron que todo se reduce a la última persona que piensas por el día y si, aquí es donde entras tú y me da miedo porque llevo tiempo sin hacer esto y bueeno aqui voy...
+                </p>
+                <p class="mb-0" style="text-align: justify;">
+                  Sabes hoy me puse a pensar en ti y recordé que eres lo mejor que puedes existir jsjsjs si entraste aqui es porque estas teniendo esas crisis en donde nos sentimos una completa mrd pero tranquila esta bien estar mal, pero lo que no esta bien es quedarse ahí! aveces te subestimas demasiado y tus miedos no te dejan ver la verdad, y la verdad es que eres una niña fantastica, geométrica y multicolor y todos los adjetivos bonitos que pueden existir, eres alguien capaz de salir adelante y talvez digas "Pero Andresito tu no me conoces como puedes decir que soy eso!!" lo se, se que no nos conocemos bien pero puedo intuir y decir que sufriste o sufres y que ahora eso te agobia, pero quiero decirte que un imbécil o lo que sea no puede opacar lo que una mujer puede lograr y hacerla dudar de sus fortalezas, me siento agradecido por el tiempo que me brindas y soy afortunado a que la vida me haya hecho conocerte, realmente eres hermosa!! realmente demasiado como para tener el autoestima tan baja y dañada por alguien que no te supo valorar, eres una joya y lo único con gran valor en esto son tus sonrisas, tus miradas y por sobre todo esos lindos ojitos que te cargas. No se si pueda arreglar tu pasado, pero espero que esto te ayude porque fue con ese propósito con que hice esto... recuerda que <a style="color: bisque;">"Eres una maravilla bajo el cielo de primavera y de todas las estaciones!!"</a> solo es un mal rato ya pasara, si tienes que llorar hazlo eso nos hace recordar que somos humanos, que seguimos vivos y que sentimos! yo creo en ti, Roma no se construyo en un dia, todo lleva tiempo asi que no te preocupes si estas yendo lento, lo estas haciendo bien Yoryis :") ya llegara eso que tanto anhelas, se que aveces queremos desaparecer pero lo único que queremos es ser encontrados pero se paciente porque cuando menos te lo esperes zas cholita va a estar ahí eso que tu corazon anhela y serás al fin feliz!!!  Mientras tanto tienes que cuidarte porfi!! y recuerda que estar mal esta bien, solo no dejes que tus emociones te controlen, no dejes que te superen y te hagan sentir que te rindes. Sentirse de esa manera no es una debilidad,tienes un corazón bien bonito y no importa el error que hayas cometido, no importa el pasado que hayas tenido, nada de lo que pasa es tu culpa, todo es parte de seguir aprendiendo, ok? Y no pienses que eres una mala persona, al contrario eres una buena persona a quien le han pasado cosas malas! no hay nada malo en ti, eres alguien increible, fuiste lo mas espectacular que pudo pasarme y se que eres lo mas bonito que puede pasarle a alguien o bueno para mi fuiste lo mas bonito✨ conocerte fue uno de las cosas mas bonitas que pudo pasarme, eres el encanto que jamás saldrá de mi mente y si la perfeccion es lo que buscas solo tienes que ser tu misma y ya! se que a veces no llegas a creer en ti pero lo que haces para poder sentirte mejor es muy valioso y bonito que lo intentes, eres mas que suficiente incluso mas de lo que imagine bueeeeno para finalizar quiero decirte que "de aqui al infinito tu eres lo mas bonito :3" ☄️
+                </p>
+                <p class="mb-4">
+                  Psdt: y la queso, y yo la jamon :3 xd jajaja 
+                </p>
+              </div>              
+            </div>
+
+          </li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+      <!--footer class="row mx-auto tm-footer">
+        <div class="col-md-6 px-0">
+          Eres arte♥ y no dudes de ti misma!!
+        </div>
+        <div class="col-md-6 px-0 tm-footer-right">
+          Diseñado por <!--<a rel="sponsored" href="https://templatemo.com" target="_blank" class="tm-link-white">Andresito69<!--/a>
+        </div>
+      </footer-->
+      <footer style="text-align: center; color: rgb(219, 188, 249);">
+        <p> </p>
+        Eres arte♥ y no dudes de ti misma!!
+      </footer>
+    </div>
+  </div>
+  <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+  <div id="loader-wrapper">            
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>  
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/templatemo-script.js"></script>
+</body>
+</html>
