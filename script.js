@@ -13,7 +13,8 @@ const canciones = [
     "Bundle of Joy From Inside Out.mp3",
     "Just the way you are.mp3",
     "Te quiero tanto.mp3",
-    "Count on Me.mp3"
+    "Count on Me.mp3",
+    "Tirar la Casa por la Ventana.mp3"
     ]
     var indiceActual = new Array(1)
     //Funcion para crear mediante javascript el listado de canciones
