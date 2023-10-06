@@ -2,7 +2,6 @@
 const canciones = [
     "Comfort Chain.mp3",
     "This Side of Paradise.mp3",
-    "Coleccionista de Canciones.mp3",
     "Those Eyes.mp3",
     "Adolescentes - Virgen.mp3",
     "Dvicio - Mi Mente.mp3",
