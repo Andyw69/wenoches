@@ -13,7 +13,6 @@ const canciones = [
     "Superheroe.mp3",
     "Bundle of Joy From Inside Out.mp3",
     "Just the way you are.mp3",
-    "Coldplay - Fix you.mp3",
     "Te quiero tanto.mp3",
     "Count on Me.mp3"
     ]
