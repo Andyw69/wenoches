@@ -9,7 +9,7 @@ const canciones = [
     "Yellow.mp3",
     "come with me.mp3",
     "You're beautiful.mp3",
-    "Superheroe.mp3",
+    "we fell in love.mp3",
     "Bundle of Joy From Inside Out.mp3",
     "Just the way you are.mp3",
     "Te quiero tanto.mp3",
