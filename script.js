@@ -13,7 +13,7 @@ const canciones = [
     "we fell in love.mp3",
     "Bundle of Joy From Inside Out.mp3",
     "Just the way you are.mp3",
-    "Te quiero tanto.mp3",
+    "js lullaby darlin Id wait for you.mp3",
     "Count on Me.mp3",
     "3November ultra the end.mp3"
     ]
