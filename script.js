@@ -2,6 +2,7 @@
 const canciones = [
     "Stephen Sanchez  Until I Found You.mp3",
     "Comfort Chain.mp3",
+    "What Was I Made For From The Motion Picture.mp3",
     "This Side of Paradise.mp3",
     "Those Eyes.mp3",
     "Adolescentes - Virgen.mp3",
