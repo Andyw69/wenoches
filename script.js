@@ -1,6 +1,7 @@
 //Array con el listado de canciones a mostrar en el reprodutor
 const canciones = [
     "Stephen Sanchez  Until I Found You.mp3",
+    "The Winner Takes It All.mp3",
     "Comfort Chain.mp3",
     "What Was I Made For From The Motion Picture.mp3",
     "This Side of Paradise.mp3",
